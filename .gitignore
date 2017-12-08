@@ -11,3 +11,10 @@ asp-simple-language-features/packages/
 
 asp-simple-language-features/asp-simple-language-features/bin/
 asp-simple-language-features/asp-simple-language-features/obj/
+
+Razor/.vs/
+
+Razor/packages/
+Razor/Razor/bin/
+Razor/packages/
+Razor/Razor/obj/
