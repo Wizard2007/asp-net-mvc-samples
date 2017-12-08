@@ -1,14 +1,5 @@
 ﻿@model Razor.Models.Product
-<!DOCTYPE html>
-<html>
-<head>
-    <meta name="viewport" content="wiidth=device-width" />
-    <title>Title</title>
-</head>
-<body>
-    <div>
-       @Model.Name
-    </div>
-</body>
-</html>
-
+@{ 
+    ViewBag.Title = "Product Name";
+}
+Product Name : @Model.Name
