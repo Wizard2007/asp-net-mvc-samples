@@ -28,5 +28,15 @@ namespace Razor.Controllers
             ViewBag.Supplier = null;
             return View(myProduct);
         }
+        public ActionResult DemoArray()
+        {
+            Product[] products =
+                 {
+                    new Product { Name = "lenova", Price = 10 },
+                    new Product { Name = "mac", Price = 20 },
+                    new Product { Name = "lenova", Price = 10 }
+            };
+            return View(products);
+        }
     }
 }
