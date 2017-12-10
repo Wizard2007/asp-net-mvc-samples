@@ -1,0 +1,25 @@
+﻿@model Razor.Models.Product
+
+@{
+    ViewBag.Title = "DemoExpression";
+}
+
+<table>
+    <thead>
+        <tr><th>Property</th><th>Value</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>Name</td><td>@Model.Name</td></tr>
+        <tr><td>Price</td><td>@Model.Price</td></tr>
+        <tr><td>Stock Level</td><td>@ViewBag.ProductCount</td></tr>
+    </tbody>
+</table>
+<div data-discount="@ViewBag.ApplayDiscount" data-express="@ViewBag.ExpressShip" data-supplieer="@ViewBag.Suplier">
+    The containing elemant has data attributes
+</div>
+@ViewBag.ApplayDiscount
+@ViewBag.Supplier
+@ViewBag.ExpressShip
+Discount: <input type="checkbox" checked ="@ViewBag.ApplayDiscount"/>
+Express: <input type="checkbox" checked="@ViewBag.ExpressShip" />
+Supplier: <input type="checkbox" checked="@ViewBag.Supplier" />
